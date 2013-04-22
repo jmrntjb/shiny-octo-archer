@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<CheckBoxPreference
+
+android:key="staysignedin"
+
+android:title="Stay Signed In"
+
+android:summary="Check this box if you want to stay signed in." />
+
+
+<CheckBoxPreference
+
+android:key="instantnotifications"
+
+android:title="Instant Notifications"
+
+android:summary="Check this box if you want to activate instant notifications." />
+
+
+</PreferenceScreen>

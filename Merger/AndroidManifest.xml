@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.mdc.homeactivity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+    
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.mdc.homeactivity.LoadingScreen"
+            android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.mdc.homeactivity.HomeActivity"></activity>
+        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ShoppingCartActivity"></activity>
+        <activity android:name="edu.mdc.homeactivity.TabsActivity"></activity>
+        
+    </application>
+
+</manifest>
